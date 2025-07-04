@@ -1,3 +1,5 @@
+Escopo do .env
+
 SQL_HOST=
 SQL_USER=
 SQL_PWD=
