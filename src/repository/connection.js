@@ -14,5 +14,11 @@ const config = {
 
 const con = await sql.connect(config)
 
-console.log('--> Banco de Dados rodando <--')
+try {
+  const con = await sql.connect(config)
+  console.log('-->   Banco de Dados rodando   <--')
+} catch (err) {
+  console.error('Erro ao conectar no SQL Server:', err)
+}
+
 export default con
